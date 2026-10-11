@@ -87,20 +87,13 @@ Total Cost = SUMX(Sales, Sales[OrderQuantity] * RELATED(Products[ProductCost]))
 
 Total Profit = [Total Revenue] - [Total Cost]
 
-Profit Margin % = DIVIDE([Total Profit], [Total Revenue])
-
 Total Orders = DISTINCTCOUNT(Sales[OrderNumber])
 
 Total Returns = SUM(Returns[ReturnQuantity])
 
 Return Rate = DIVIDE([Total Returns], SUM(Sales[OrderQuantity]))
-
-Revenue LY = CALCULATE([Total Revenue], SAMEPERIODLASTYEAR('Calendar'[Date]))
-
-Revenue YoY % = DIVIDE([Total Revenue] - [Revenue LY], [Revenue LY])
 ```
 
-> Adjust column names to match your own model.
 
 ## 📊 Dashboard Pages & Features
 
@@ -120,21 +113,6 @@ Revenue YoY % = DIVIDE([Total Revenue] - [Revenue LY], [Revenue LY])
 
 **Interactive features:** slicers (year, region, category), cross-filtering, drill-down hierarchies, tooltips, and bookmarks.
 
-> 📷 *Add dashboard screenshots here:*
-> `![Overview](images/overview.png)`
-> `![Products](images/products.png)`
-> `![Customers](images/customers.png)`
-
-## 💡 Key Insights
-
-*Replace these with the findings from your own dashboard:*
-
-- **Top category:** [e.g., Bikes account for X% of total revenue]
-- **Best region:** [e.g., Australia / United States leads in sales]
-- **Trend:** [e.g., Revenue grew X% year over year]
-- **Returns:** [e.g., Return rate is X%, concentrated in product Y]
-- **Customers:** [e.g., Higher-income customers contribute the most revenue]
-
 ## ▶️ How to Run
 
 1. Clone this repository:
@@ -149,9 +127,9 @@ Revenue YoY % = DIVIDE([Total Revenue] - [Revenue LY], [Revenue LY])
 ## 📁 Repository Structure
 
 ```
-├── AdventureWorks_Dashboard.pbix   # Power BI report
-├── data/                           # Source CSV files
-├── images/                         # Screenshots of the dashboard and model
+├── AdventureWorks_Dashboard.pbix       # Power BI report
+├── raw data/                           # Source CSV files
+├── dashboard photos/                   # Screenshots of the dashboard and model
 └── README.md
 ```
 
