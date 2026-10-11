@@ -67,7 +67,6 @@ Territories┘             └── Territories
 Products ──< Returns
 ```
 
-> 📷 *Add a screenshot of your model view here:* `![Data Model](images/data_model.png)`
 
 ## 🧹 Data Preparation
 
